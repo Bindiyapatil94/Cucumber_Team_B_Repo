@@ -11,7 +11,7 @@ public class Browser_Invoke {
 	
 public void getBrowser()
 {
-	System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
     // driver.get(propertyfile1.getProperty("ChromeExe"));
 	driver=new ChromeDriver();
 	driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
