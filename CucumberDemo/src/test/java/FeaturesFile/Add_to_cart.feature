@@ -21,9 +21,9 @@ Feature: Add to Cart
   To validate products are added in the cart
 
 		
-		Scenario: Add to cart single product
-		  Given As I am user launch  browser "chrome"
-		  Then  I enter url as "https://demo.cs-cart.com"
+	   Scenario: Add to cart single product
+	   Given As I am user launch  browser "chrome"
+	   Then  I enter url as "https://demo.cs-cart.com"
 	    When I enter "computer" in top search box
 	    And click on search submit button 
 	    Then page navigates to product search results
@@ -31,5 +31,5 @@ Feature: Add to Cart
 	    When I click on view button
 	    Then I click on increment button
 	    When I click add to cart button of product
-			Then my cart is updated with product quantity as 1 and correct total price
+	   Then my cart is updated with product quantity as 1 and correct total price
 	    And close the browser
